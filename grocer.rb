@@ -41,7 +41,7 @@ def apply_coupons(cart, coupons)
     name = selection[0]
     if new_cart[name] != nil
       new_name = "#{name} W/COUPON"
-      p"B4 w", new_cart[new_name], "B4 w/o", new_cart[name]
+      #p"B4 w", new_cart[new_name], "B4 w/o", new_cart[name]
       if new_cart[new_name] == nil
         new_cart[new_name] = new_cart[name].clone
         new_cart[new_name][:price] = coupons[i][:cost]

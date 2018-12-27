@@ -71,12 +71,12 @@ end
 def apply_clearance(cart)
   # code here
   updated_cart = cart.clone
-  update_cart.each do |item, info|
+  updated_cart.each do |item, info|
     if info[:clearance]
       info[:price] = (info[:price] * 0.80).round(1)
     end
   end
-  update_cart
+  updated_cart
 end
 
 def checkout(cart, coupons)

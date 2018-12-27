@@ -36,9 +36,9 @@ def consolidate_cart(cart)
 
 def apply_coupons(cart, coupons)
   # code here
-  new_cart = consolidate_cart(cart).clone
+  new_cart = cart.clone
   #consolidated = consolidate_cart(cart).clone
-  item_values =  coupons.map {|item| item.values}
+  item_values = coupons.map {|item| item.values}
   item_values.each_with_index do |selection, i|
     name = selection[0]
     if new_cart[name] != nil

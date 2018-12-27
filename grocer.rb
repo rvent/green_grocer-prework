@@ -52,7 +52,7 @@ def apply_coupons(cart, coupons)
       # else
       #   new_cart[new_name][:count] += 1
       # end
-      p new_name, new_cart[new_name], name, consolidated[name]
+      p new_name, new_cart[new_name], name, #consolidated[name]
     end
     # if new_cart[new_name][:count] == nil
     #   new_cart[new_name][:count] = 1

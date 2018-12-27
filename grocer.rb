@@ -60,12 +60,12 @@ def apply_coupons(cart, coupons)
     #   new_cart[new_name][:count] += 1
     # end
   end
-  cart = new_cart.clone
+  new_cart
 end
 
-cart = consolidate_cart(data)
+# cart = consolidate_cart(data)
 # p cart
-p apply_coupons(cart, coupons)
+# p apply_coupons(cart, coupons)
 
 def apply_clearance(cart)
   # code here

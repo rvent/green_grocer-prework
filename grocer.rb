@@ -20,11 +20,11 @@ def consolidate_cart(cart)
     items.each do |name, values|
       if consolidated_cart[name] == nil
         consolidated_cart[name] = values
-      end
-      if consolidated_cart[name][:count] == nil
-        consolidated_cart[name] = {:count => 1}
-      else
-        consolidated_cart[name][:count] += 1
+        if consolidated_cart[name][:count] == nil
+          consolidated_cart[name] = {:count => 1}
+        else
+          consolidated_cart[name][:count] += 1
+        end
       end
     end
   end

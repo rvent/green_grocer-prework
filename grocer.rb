@@ -53,6 +53,8 @@ def apply_coupons(cart, coupons)
       end
       if (new_cart[name][:count] -= coupons[i][:num]) < 0
         new_cart[name][:count] -= coupons[i][:num]
+      else
+        new_cart[new_name][:count] += 1
       end
     end
     # if new_cart[new_name][:count] == nil
@@ -83,5 +85,5 @@ def checkout(cart, coupons)
   # code here
   consolidated_cart = consolidate_cart(cart)
   coupon_hash = apply_coupons(consolidated_cart, coupons)
-  apply_clearance(coupon_hash)["BEETS"][:price]
+  initial_discount = apply_clearance(coupon_hash)
 end

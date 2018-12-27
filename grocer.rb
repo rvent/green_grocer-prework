@@ -58,7 +58,7 @@ def apply_coupons(cart, coupons)
     #   new_cart[new_name][:count] += 1
     # end
   end
-  new_cart
+  cart = new_cart.clone
 end
 
 p apply_coupons(data, coupons)

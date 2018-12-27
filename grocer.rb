@@ -17,7 +17,7 @@ def consolidate_cart(cart)
   # code here
   consolidated_cart = {}
   cart.clone.each do |items|
-    items.each do |name, values|
+    items.clone.each do |name, values|
       if consolidated_cart[name] == nil
         consolidated_cart[name] = values
       end

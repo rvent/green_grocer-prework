@@ -53,8 +53,6 @@ def apply_coupons(cart, coupons)
       end
       if (new_cart[name][:count] -= coupons[i][:num]) < 0
         new_cart[name][:count] -= coupons[i][:num]
-      else
-        new_cart[new_name][:count] -= 1
       end
     end
     # if new_cart[new_name][:count] == nil

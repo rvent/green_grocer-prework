@@ -48,13 +48,10 @@ def apply_coupons(cart, coupons)
         new_cart[new_name] = new_cart[name].clone
         new_cart[new_name][:price] = coupons[i][:cost]
         new_cart[new_name][:count] = 1
-      else
-        new_cart[new_name][:count] += 1
       end
       if (new_cart[name][:count] -= coupons[i][:num]) < 0
         new_cart[name][:count] -= coupons[i][:num]
-      else
-        new_cart[new_name][:count] -= 1
+        new_cart[new_name][:count] += 1
       end
     end
     # if new_cart[new_name][:count] == nil

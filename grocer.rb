@@ -32,7 +32,7 @@ def consolidate_cart(cart)
   consolidated_cart
  end
 puts consolidate_cart(data)
-
+puts"Jello"
 def apply_coupons(cart, coupons)
   # code here
   new_cart = consolidate_cart(cart).clone

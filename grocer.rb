@@ -21,6 +21,7 @@ def consolidate_cart(cart)
       if consolidated_cart[name] == nil
         consolidated_cart[name] = values
       end
+      p consolidated_cart[name]
       if consolidated_cart[name][:count] == nil
         consolidated_cart[name][:count] = 1
       else

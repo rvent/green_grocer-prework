@@ -83,5 +83,5 @@ def checkout(cart, coupons)
   # code here
   consolidated_cart = consolidate_cart(cart)
   coupon_hash = apply_coupons(consolidated_cart, coupons)
-  apply_clearance(coupon_hash)
+  apply_clearance(coupon_hash)["BEETS"][:price]
 end

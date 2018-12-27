@@ -64,7 +64,7 @@ def apply_coupons(cart, coupons)
 end
 
 cart = consolidate_cart(data)
-p apply_coupons(cart, coupons)
+# p apply_coupons(cart, coupons)
 
 def apply_clearance(cart)
   # code here

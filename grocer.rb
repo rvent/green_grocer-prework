@@ -16,10 +16,10 @@ coupons =
 def consolidate_cart(cart)
   # code here
   consolidated_cart = {}
-  cart.clone.each do |items|
-    items.clone.each do |name, values|
+  cart.each do |items|
+    items.each do |name, values|
       if consolidated_cart[name] == nil
-        consolidated_cart[name] = values
+        consolidated_cart[name] = values.clone
       end
       # p consolidated_cart[name]
       if consolidated_cart[name][:count] == nil

@@ -46,7 +46,7 @@ def apply_coupons(cart, coupons)
       if new_cart[new_name] == nil
         new_cart[new_name] = consolidated[name].clone
         new_cart[new_name][:price] = coupons[i][:cost]
-
+      end
       #   new_cart[new_name][:count] = 1
       # else
       #   new_cart[new_name][:count] += 1

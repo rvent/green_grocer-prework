@@ -31,10 +31,9 @@ def consolidate_cart(cart)
   end
   consolidated_cart
  end
-p data
-p consolidate_cart(data)
-p data
-puts"Jello"
+
+# p consolidate_cart(data)
+
 def apply_coupons(cart, coupons)
   # code here
   new_cart = consolidate_cart(cart).clone
@@ -65,7 +64,7 @@ def apply_coupons(cart, coupons)
 end
 
 cart = consolidate_cart(data)
-#p apply_coupons(cart, coupons)
+p apply_coupons(cart, coupons)
 
 def apply_clearance(cart)
   # code here

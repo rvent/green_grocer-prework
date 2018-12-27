@@ -29,7 +29,7 @@ def consolidate_cart(cart)
       end
     end
   end
-  consolidated_cart
+  consolidated_cart.clone
  end
 puts consolidate_cart(data)
 puts"Jello"

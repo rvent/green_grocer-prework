@@ -51,7 +51,9 @@ def apply_coupons(cart, coupons)
       else
         new_cart[new_name][:count] += 1
       end
-      new_cart[name][:count] -= coupons[i][:num]
+      if (new_cart[name][:count] -= coupons[i][:num]) < 0
+        new_cart[name][:count] -= coupons[i][:num]
+      end
     end
     # if new_cart[new_name][:count] == nil
     #   new_cart[new_name][:count] = 1
@@ -77,4 +79,5 @@ end
 
 def checkout(cart, coupons)
   # code here
+
 end

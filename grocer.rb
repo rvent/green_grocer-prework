@@ -31,8 +31,9 @@ def consolidate_cart(cart)
   end
   consolidated_cart
  end
-puts consolidate_cart(data)
-puts data
+p data
+p consolidate_cart(data)
+p data
 puts"Jello"
 def apply_coupons(cart, coupons)
   # code here

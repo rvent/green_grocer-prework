@@ -22,7 +22,7 @@ def consolidate_cart(cart)
         consolidated_cart[name] = values
       end
       if consolidated_cart[name][:count] == nil
-        consolidated_cart[name][:count] =>1      
+        consolidated_cart[name][:count] = 1      
       else
         consolidated_cart[name][:count] += 1
       end
